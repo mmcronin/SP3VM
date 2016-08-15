@@ -13,7 +13,8 @@
       "type": "string",
       "metadata": {
         "description": "The region to deploy the resources into"
-      }
+      },
+      "defaultValue": "North Europe"
     },
     "virtualNetworkName": {
       "type": "string",
@@ -61,7 +62,8 @@
       "type": "string",
       "metadata": {
         "description": "The name of the Administrator of the new VM and Domain"
-      }
+      },
+      "defaultValue": "spadmin"
     },
     "adminPassword": {
       "type": "securestring",
@@ -153,7 +155,8 @@
       "type": "string",
       "metadata": {
         "description": "The DNS Prefix for the SharePoint Public IP Address"
-      }
+      },
+      "defaultValue": "mcspfarm"
     },
     "baseUrl": {
       "type": "string",
@@ -161,7 +164,7 @@
         "artifactsBaseUrl": "",
         "description": "URL to acquire other templates"
       },
-      "defaultValue": "https://github.com/mmcronin/SP3VM/tree/master/SP-3-VM"
+      "defaultValue": ""
     },
     "spPublicIPNewOrExisting": {
       "type": "string",
