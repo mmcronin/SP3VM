@@ -73,17 +73,18 @@
         },
         "storageProfile": {
             "osDisk": {
-            "name": "osdisk",
+              "createOption": "FromImage",
+              "name": "osdisk",
+              "osType": "[parameters('osType')]",
+              "caching": "ReadWrite",
+               "image": {
+                    "uri": "[parameters('osDiskVhdUri')]"
+                     },
             "vhd": {
               "uri": "[concat('http://',parameters('storageAccountNamePrefix'),'1.blob.core.windows.net/vhds/',parameters('spVMName'),'-osdisk.vhd')]"
-            },
-            "osType": "[parameters('osType')]",
-            "caching": "ReadWrite",
-            "createOption": "FromImage",
-            "image": {
-                    "uri": "[parameters('osDiskVhdUri')]"
-                     }
-            },
+              }
+            }                       
+          },
           "dataDisks": [
             {
               "vhd": {
@@ -110,9 +111,8 @@
             "storageUri": "[concat('http://',parameters('storageAccountNamePrefix'),'2.blob.core.windows.net')]"
           }
         }
-      }
-    },
-    {
+      },
+        {
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "name": "[concat(parameters('spVMName'),'/ConfigureSPServer')]",
       "apiVersion": "2015-06-15",
