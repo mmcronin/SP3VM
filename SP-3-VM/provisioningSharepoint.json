@@ -18,7 +18,7 @@
       } ,
        "SPStorageAccount": { 
       "type": "string", 
-      "defaultValue": "https://cbbstr17b32olch5shbw.blob.core.windows.net/vhds",
+      "defaultValue": "https://cbbstr17b32olch5shbw.blob.core.windows.net/vhds/",
       "metadata": { 
         "Description": "Uri SharePoint VHDs" 
        }
