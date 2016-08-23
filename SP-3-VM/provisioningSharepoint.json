@@ -4,7 +4,7 @@
   "parameters": {
     "osDiskVhdUri": { 
       "type": "string", 
-      "defaultValue": "https://cbbstr17b32olch5shbw.blob.core.windows.net/vhds/Windows2012SP2013SP1Sysprep.vhd",
+      "defaultValue": "https://mcsp13prem.blob.core.windows.net/system/Microsoft.Compute/Images/mcsp13prem/SP2013Sysprep-osDisk.f001c170-4e5e-41b3-9a97-4246f42052f7.vhd",
       "metadata": { 
         "Description": "Uri of your user image" 
        }
@@ -18,7 +18,7 @@
       } ,
        "SPStorageAccount": { 
       "type": "string", 
-      "defaultValue": "https://cbbstr17b32olch5shbw.blob.core.windows.net/vhds/",
+      "defaultValue": "https://mcsp13prem.blob.core.windows.net/vhds/",
       "metadata": { 
         "Description": "Uri SharePoint VHDs" 
        }
